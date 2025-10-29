@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-information</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/004/467/266/non_2x/portfolio-sketch-neon-icon-simple-thin-line-outline-of-education-icons-for-ui-and-ux-website-or-mobile-application-isolated-on-brick-wall-vector.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    button { 
+        color: red;
+        cursor: pointer;
+        background-color: black;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        border: none;
+     }
+    button:hover{
+        background-color: red;
+        color: black;
+    }
+
+</style>
+<body>
+    <nav class="navbar">
+        <b><h1>Portfolio</h1></b>
+        <div class="navbar-links">
+            <b> <p><a class="navbar-link" href="index.html">Home</a></p> </b>
+            <b> <p><a class="navbar-link" href="Education.html">Education</a></p> </b>
+            <b> <p><a class="navbar-link" href="Skills.html">Skills</a></p> </b>
+            <b> <p><a class="navbar-link" href="https://github.com/ariganesh11082002?tab=repositories">Projects</a></p> </b>
+            <b> <p><a class="navbar-link" href="contact.html">Contact</a></p> </b>
+
+        </div>
+    </nav>
+    
+    <table id="info-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Person's Message</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+        let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+        const tbody = document.getElementById("table-body");
+
+        function renderTable() {
+            tbody.innerHTML = "";
+
+            contacts.forEach((contact, index) => {
+                const row = document.createElement("tr");
+
+                row.innerHTML = `
+                    <td>${contact.name}</td>
+                    <td>${contact.email}</td>
+                    <td>${contact.subject}</td>
+                    <td>${contact.message}</td>
+                    <td><button onclick="deleteContact(${index})">Delete</button></td>
+                `;
+
+                tbody.appendChild(row);
+            });
+        }
+
+        function deleteContact(index) {
+            contacts.splice(index, 1);
+            localStorage.setItem("contacts", JSON.stringify(contacts));
+            renderTable();
+        }
+
+        renderTable();
+    </script>
+
+</body>
+</html>

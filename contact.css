@@ -1,0 +1,99 @@
+body{
+  background: linear-gradient(115deg, #0f0f0f, #1a1a2e, #16213e);
+  color: #ffffff;
+  font-family: 'Poppins',sans-serif;
+}
+
+.navbar h1{
+    padding-left: 100px;
+    color: darkmagenta;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;   
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    color: #ffffff;
+    align-items: center;
+    padding-left: 40%;
+}
+.navbar-links a{
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: darkmagenta;
+}
+
+.contact{
+    display: flex;
+    margin-top: 50px;
+}
+.contact h1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.information{
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.contact-details{
+    height: 600px;
+    width: 600px;
+    border: 2px solid darkorchid;
+    margin:0 auto;
+    margin-top: -10%;
+    margin-left: 40%;
+    border: none;
+    
+}
+input{
+    height: 40px;
+    width: 400px;
+    background: grey;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+ input::placeholder {
+    color: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* text-align: center; */
+    opacity: 0.76;
+    transition: opacity 0.3s ease;
+}
+input:focus::placeholder {
+    opacity: 0; 
+}
+.message{
+    height: 40px;
+    width: 400px;
+    padding-bottom: 60px;
+}
+.message input::placeholder{
+    margin: 0;
+}
+.contact-details button{
+    margin-left: 30px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    background: aqua;
+    margin-top: 10px;
+}
+.contact-details button:hover{
+    box-shadow: 0 0 10px rgba(0,255,255,0.5), 0 0 20px rgba(0,255,255,0.3);
+}

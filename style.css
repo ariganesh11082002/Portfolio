@@ -1,0 +1,193 @@
+body{
+  background: linear-gradient(115deg, #0f0f0f, #1a1a2e, #16213e);
+  color: #ffffff;
+  font-family: 'Poppins',sans-serif;
+}
+
+.navbar h1{
+    padding-left: 100px;
+    color: darkmagenta;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;   
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    color: #ffffff;
+    align-items: center;
+    padding-left: 40%;
+}
+.navbar-links a{
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: darkmagenta;
+}
+.innercontent h2{
+    display: inline;
+    align-items: center;
+}
+.innercontent div{
+    padding-left: 300px;
+    padding-top: 200px;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+}
+.innercontent-image{
+    position: absolute;
+    left: 150%;
+    height: 500px;
+    width: 400px;
+    border-radius: 20%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 3s;
+    opacity: 0.6;
+}
+.innercontent-image:hover{
+    opacity: 2;
+}
+.innercontent button{
+    padding: 10px;
+    border-radius: 10px;
+     color: darkmagenta;
+    /* background: linear-gradient(115deg, #0f0f0f, #1a1a2e, #16213e); */
+    background: #0f0f0f;
+    /* background: darkmagenta; */
+    cursor: pointer;
+    margin-top: 10px;
+    width: 200px;
+    /* border: none; */
+    border-color: darkmagenta;
+}
+.innercontent button:hover{
+    background: darkmagenta;
+    color: white;
+    box-shadow: 0 10px 24px rgba(255,128,0,0.3);
+    /* transform: translateX(6px); */
+    transform: scale(1.1);
+    border: none;
+}
+.innercontent i{
+    color: darkmagenta;
+    background-color: #16213e;
+    border: 2px solid darkmagenta;
+    font-size: 25px;
+    border-radius: 12px;
+    padding: 5px;
+}
+.innercontent i:hover{
+    color: #16213e;
+    background-color: darkmagenta;
+}
+
+.academy{
+    color: darkmagenta;
+    box-shadow: 0 10px 24px rgba(255,128,0,0.3);  
+    text-align: center;
+    padding: 10px;
+}
+
+.education{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sslc{
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    /* margin-left: 200px; */
+    margin: 150px;
+    padding: 20px;
+}
+.sslc:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.2), 0 0 30px rgba(255,0,255,0.3), 0 0 45px rgba(255,0,255,0.3);
+}
+.sslc a{
+    text-decoration: none;
+    color: blue;
+}
+.sslc a:hover{
+    text-decoration: underline;
+    color: palevioletred;
+}
+.hslc{
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    /* margin-left: 200px; */
+    margin: 150px;
+    padding: 20px;
+}
+.hslc:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.2), 0 0 30px rgba(255,0,255,0.3), 0 0 45px rgba(255,0,255,0.3);
+}
+.hslc a{
+    text-decoration: none;
+    color: blue;
+}
+.hslc a:hover{
+    text-decoration: underline;
+    color: palevioletred;
+}
+.ug{
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    /* margin-left: 200px; */
+    margin: 150px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.ug:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.2), 0 0 30px rgba(255,0,255,0.3), 0 0 45px rgba(255,0,255,0.3);
+}
+.ug a{
+    text-decoration: none;
+    color: blue;
+}
+.ug a:hover{
+    text-decoration: underline;
+    color: palevioletred;
+}
+.pg{
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    /* margin-left: 200px; */
+    margin: 150px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.pg:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.2), 0 0 30px rgba(255,0,255,0.3), 0 0 45px rgba(255,0,255,0.3);
+}
+.pg a{
+    text-decoration: none;
+    color: blue;
+}
+.pg a:hover{
+    text-decoration: underline;
+    color: palevioletred;
+}

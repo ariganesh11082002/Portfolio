@@ -1,0 +1,278 @@
+body{
+  background: linear-gradient(115deg, #0f0f0f, #1a1a2e, #16213e);
+  color: #ffffff;
+  font-family: 'Poppins',sans-serif;
+}
+
+.navbar h1{
+    padding-left: 100px;
+    color: darkmagenta;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;   
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    color: #ffffff;
+    align-items: center;
+    padding-left: 40%;
+}
+.navbar-links a{
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: darkmagenta;
+}
+
+.skills h1{
+    display: inline;
+}
+.html{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.html i{
+    font-size: 30px;
+  color: #E34F26; 
+  margin: 10px;
+  margin-top: 24px;
+  margin-right: 20px;
+}
+.html div{
+    height: 10px;
+    width: 500px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: static;
+    display: inline;
+}
+.html fieldset{
+    height: 10px;
+    width: 400px;
+    background-color: green;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    right: 12px;
+    bottom: 9px;
+    padding: 9px;
+    display: inline;
+}
+.html h2{
+    display: inline;
+    margin-left: 10px;
+}
+
+.css{
+    display: flex;
+    margin-left: 100px;
+}
+.css i{
+   font-size: 30px;
+  color: #264de4; 
+  margin: 10px;
+  margin-top: 24px;
+  margin-right: 20px;
+}
+.css div{
+    height: 10px;
+    width: 500px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: static;
+    display: inline;
+}
+.css fieldset{
+    height: 10px;
+    width: 350px;
+    background-color: green;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    right: 12px;
+    bottom: 9px;
+    padding: 9px;
+    display: inline;
+}
+.css h2{
+    display: inline;
+    margin-left: 10px;
+}
+
+.js{
+    display: flex;
+    margin-left: 100px;
+}
+.js i{
+   font-size: 30px;
+  color: #f0db4f; 
+  margin: 10px;
+  margin-top: 24px;
+  margin-right: 20px;
+}
+.js div{
+    height: 10px;
+    width: 500px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: static;
+    display: inline;
+}
+.js fieldset{
+    height: 10px;
+    width: 300px;
+    background-color: green;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    right: 12px;
+    bottom: 9px;
+    padding: 9px;
+    display: inline;
+}
+.js h2{
+    display: inline;
+    margin-left: 10px;
+}
+
+.python{
+    display: flex;
+    margin-left: 100px;
+}
+.python i{
+   font-size: 30px;
+  color: #3776AB; 
+  margin: 10px;
+  margin-top: 24px;
+  margin-right: 20px;
+}
+.python div{
+    height: 10px;
+    width: 500px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: static;
+    display: inline;
+}
+.python fieldset{
+    height: 10px;
+    width: 350px;
+    background-color: green;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    right: 12px;
+    bottom: 9px;
+    padding: 9px;
+    display: inline;
+}
+.python h2{
+    display: inline;
+    margin-left: 10px;
+}
+
+.java{
+    display: flex;
+    margin-left: 100px;
+}
+.java i{
+  font-size: 30px;
+  color: #007396;
+  margin: 10px;
+  margin-top: 24px;
+  margin-right: 20px;
+}
+.java div{
+    height: 10px;
+    width: 500px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: static;
+    display: inline;
+}
+.java fieldset{
+    height: 10px;
+    width: 300px;
+    background-color: green;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    right: 12px;
+    bottom: 9px;
+    padding: 9px;
+    display: inline;
+}
+.java h2{
+    display: inline;
+    margin-left: 10px;
+}
+
+.mysql{
+    display: flex;
+    margin-left: 100px;
+}
+.mysql i{
+  font-size: 30px;
+  color: #4479A1;
+  margin: 10px;
+  margin-top: 24px;
+  margin-right: 20px;
+}
+.mysql div{
+    height: 10px;
+    width: 500px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: static;
+    display: inline;
+}
+.mysql fieldset{
+    height: 10px;
+    width: 450px;
+    background-color: green;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    right: 12px;
+    bottom: 9px;
+    padding: 9px;
+    display: inline;
+}
+.mysql h2{
+    display: inline;
+    margin-left: 10px;
+}
